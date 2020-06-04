@@ -63,7 +63,6 @@ const BoxImg = styled.div`
     background: #9C8CB9;
   }
 
-
   img {
     background: ${props => props.background};
     margin: 3% 20%;
@@ -92,6 +91,11 @@ const BoxImg = styled.div`
     max-width: 100%;
     text-align: justify;
     top: 225px;
+  }
+
+  span {
+    background: #fff;
+    font-weight: 800;
   }
 `
 
@@ -143,7 +147,7 @@ class ContentContainer extends Component {
             </div>
             <div>
               <p>
-                Quando pressionado o botão Leia mais... o restante da informação deverá aparecer em scroll down.
+                Quando pressionado o botão <span>Leia mais...</span> o restante da informação deverá aparecer em scroll down.
               </p>
               <StyledButton background='#FE9481'>Leia mais...</StyledButton>
             </div>
@@ -156,7 +160,7 @@ class ContentContainer extends Component {
             </div>
             <div>
               <p>
-                Quando pressionado o botão Leia mais... informação deverá aparecer completa em um popup na tela.
+                Quando pressionado o botão <span>Leia mais...</span> informação deverá aparecer completa em um popup na tela.
               </p>
               <StyledButton background='#FCDA92'>Leia mais...</StyledButton>
             </div>
@@ -169,7 +173,7 @@ class ContentContainer extends Component {
             </div>
             <div>
               <p>
-                Quando pressionado o botão alterar tema modifique o tema do site para blackfriday a seu gosto.
+                Quando pressionado o botão <span>alterar tema</span> modifique o tema do site para blackfriday a seu gosto.
               </p>
               <StyledButton background='#9C8CB9'>Alterar tema</StyledButton>
             </div>
