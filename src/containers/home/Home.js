@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from '../../components/menu/Menu'
 import ContentContainer from '../../components/container/ContentContainer'
+import Footer from '../../components/footer/Footer'
 import styled from 'styled-components'
 
 const Container = styled.main`
@@ -8,13 +9,14 @@ const Container = styled.main`
   width: 1200px;
 `
 
-function App() {
+const Home = () => {
   return (
     <Container>
       <Menu />
       <ContentContainer />
+      <Footer />
     </Container>
   )
 }
 
-export default App
+export default Home
