@@ -66,7 +66,7 @@ const BoxImg = styled.div`
 
   img {
     background: ${props => props.background};
-    margin: 0 20%;
+    margin: 3% 20%;
   }
 
   div {
