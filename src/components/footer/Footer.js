@@ -18,6 +18,7 @@ const Container = styled.footer`
   width: 100%;
 
   p {
+    color: #868686;
     margin: 30px 0;
   }
 
