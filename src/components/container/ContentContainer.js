@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import ImageSection from './ImageSection'
+import StyledButton from '../utils/StyleButton'
 
 import DesktopImg from '../../assets/desktop-responsive-design.png'
 import TabletImg from '../../assets/tablets-responsive-design.png'
@@ -96,23 +97,6 @@ const BoxImg = styled.div`
   }
 `
 
-const StyledButton = styled.button`
-  background: ${props => props.background};
-  border: none;
-  height: 40px;
-  font-size: 1.1111111111em;
-  font-weight: 400;
-  float: right;
-  margin: 10px;
-  text-align: center;
-  text-shadow: none;
-  width: 33.33333333333333%;
-  color: #fff;
-  padding: 0 10px;
-  position: relative;
-  bottom: 50px;
-`
-
 class ContentContainer extends Component {
   constructor(props) {
     super(props)
@@ -146,7 +130,7 @@ class ContentContainer extends Component {
               <p>
                 Quando pressionado o botão <span>Leia mais...</span> o restante da informação deverá aparecer em scroll down.
               </p>
-              <StyledButton background='#FE9481'>Leia mais...</StyledButton>
+              <StyledButton background='#FE9481' title='Leia mais...' />
             </div>
           </BoxImg>
 
@@ -159,7 +143,7 @@ class ContentContainer extends Component {
               <p>
                 Quando pressionado o botão <span>Leia mais...</span> informação deverá aparecer completa em um popup na tela.
               </p>
-              <StyledButton background='#FCDA92'>Leia mais...</StyledButton>
+              <StyledButton background='#FCDA92' title='Leia mais...' />
             </div>
           </BoxImg>
 
@@ -174,10 +158,9 @@ class ContentContainer extends Component {
               </p>
               <StyledButton
                 background='#9C8CB9'
-                onClick={() => this.props.handleChangeTheme()}
-              >
-                Alterar tema
-              </StyledButton>
+                handleAction={() => this.props.handleChangeTheme()}
+                title='Alterar tema'
+              />
             </div>
           </BoxImg>
         </ImageSection>
