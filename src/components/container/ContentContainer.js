@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import ImageSection from './ImageSection'
 
 import DesktopImg from '../../assets/desktop-responsive-design.png'
 import TabletImg from '../../assets/tablets-responsive-design.png'
@@ -39,12 +40,6 @@ const Circle = styled.div`
   background: ${props => props.background || "#000"};
   border-radius: 50%;
   display: inline-block;
-`
-
-const ImageSection = styled.section`
-  display: grid;
-  grid-template-columns: 31% 31% 31%;
-  grid-column-gap: 3%;
 `
 
 const BoxImg = styled.div`
