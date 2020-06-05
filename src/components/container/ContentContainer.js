@@ -1,107 +1,18 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import ImageSection from './ImageSection'
 import StyledButton from '../utils/StyleButton'
+import { ParagraphSection, BoxImg, Circle } from './styled'
 
 import DesktopImg from '../../assets/desktop-responsive-design.png'
 import TabletImg from '../../assets/tablets-responsive-design.png'
 import MobileImg from '../../assets/mobile-responsive-design.png'
 
-
-const ParagraphSection = styled.section`
-  margin: 5% 10%;
-  h2 {
-    color: #007f56;
-    font-weight: 300;
-    font-size: 3.3333333333em;
-    text-align: center;
-
-    span {
-      font-weight: bold;
-
-      &:nth-child(even) {
-        text-transform: uppercase;
-      }
-    }
-  }
-
-  h3 {
-    color: #868686;
-    font-size: 1.7777777778em;
-    text-align: center;
-    font-weight: 300;
-    margin: 5%;
-  }
-`
-
-const Circle = styled.div`
-  height: 20px;
-  width: 20px;
-  background: ${props => props.background || "#000"};
-  border-radius: 50%;
-  display: inline-block;
-`
-
-const BoxImg = styled.div`
-  background: ${props => props.background};
-  max-height: 330px;
-
-  .desktop {
-    background: #FE9481;
-
-    button {
-      background: ${props => props.backgroud};
-    }
-  }
-  .tablet {
-    background: #FCDA92;
-  }
-  .mobile {
-    background: #9C8CB9;
-  }
-
-  img {
-    background: ${props => props.background};
-    margin: 3% 20%;
-  }
-
-  div {
-    background:  #fff;
-    min-height: 112px;
-  }
-
-  h3 {
-    background: ${props => props.background};
-    color: #fff;
-    font-size: 1.77777777778em;
-    font-weight: 300;
-    margin: 30px 0;
-    text-align: center;
-  }
-
-  p {
-    color: #868686;
-    background: #fff;
-    float: left;
-    height: 100px;
-    padding: 1.9444444444444445%;
-    max-width: 100%;
-    text-align: justify;
-    top: 225px;
-  }
-
-  span {
-    background: #fff;
-    font-weight: 800;
-  }
-`
-
 class ContentContainer extends Component {
   constructor(props) {
     super(props)
 
-    this.state = { theme: props.blackTheme }
+    this.state = {}
   }
 
   render() {
