@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import DesktopImg from '../../assets/desktop-responsive-design.png'
 import TabletImg from '../../assets/tablets-responsive-design.png'
 import MobileImg from '../../assets/mobile-responsive-design.png'
+
 
 const ParagraphSection = styled.section`
   margin: 5% 10%;
@@ -120,7 +122,7 @@ class ContentContainer extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = { theme: props.blackTheme }
   }
 
   render() {
@@ -175,13 +177,22 @@ class ContentContainer extends Component {
               <p>
                 Quando pressionado o botão <span>alterar tema</span> modifique o tema do site para blackfriday a seu gosto.
               </p>
-              <StyledButton background='#9C8CB9'>Alterar tema</StyledButton>
+              <StyledButton
+                background='#9C8CB9'
+                onClick={() => this.props.handleChangeTheme()}
+              >
+                Alterar tema
+              </StyledButton>
             </div>
           </BoxImg>
         </ImageSection>
       </div>
     )
   }
+}
+
+ContentContainer.propType = {
+  handleChangeTheme: PropTypes.func.isRequired
 }
 
 export default ContentContainer
