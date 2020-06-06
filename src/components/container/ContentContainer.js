@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ImageSection from './ImageSection'
+import Circle from './Circle'
 import StyledButton from '../utils/StyleButton'
-import { ParagraphSection, BoxImg, Circle } from './styled'
+import { ParagraphSection, BoxImg } from './styled'
 
 import DesktopImg from '../../assets/desktop-responsive-design.png'
 import TabletImg from '../../assets/tablets-responsive-design.png'
 import MobileImg from '../../assets/mobile-responsive-design.png'
+
+const backgroundArray = ['#007f56', '#FE9481', '#9C8CB9', '#868686', '#FCDA92']
 
 class ContentContainer extends Component {
   constructor(props) {
@@ -27,7 +30,7 @@ class ContentContainer extends Component {
             A fonte utilizada é a Open Sans de 300 a 800.<br />
             exemplo: "Open Sans", Helvetica, sans-serif, arial;<br />
             Já as cores são:<br />
-            <Circle background='#007f56' />#007f56, <Circle background='#868686' />#868686, <Circle background='#FE9481' />#FE9481, <Circle background='#FCDA92' />#FCDA92 e <Circle background='#9C8CB9' />#9C8CB9
+            <Circle backgroundArray={backgroundArray} />
           </h3>
         </ParagraphSection>
 
