@@ -5,9 +5,9 @@ import Circle from './Circle'
 import StyledButton from '../utils/StyleButton'
 import { ParagraphSection, BoxImg } from './styled'
 
-import DesktopImg from '../../assets/desktop-responsive-design.png'
-import TabletImg from '../../assets/tablets-responsive-design.png'
-import MobileImg from '../../assets/mobile-responsive-design.png'
+import DesktopImg from 'assets/desktop-responsive-design.png'
+import TabletImg from 'assets/tablets-responsive-design.png'
+import MobileImg from 'assets/mobile-responsive-design.png'
 
 const backgroundArray = ['#007f56', '#FE9481', '#9C8CB9', '#868686', '#FCDA92']
 

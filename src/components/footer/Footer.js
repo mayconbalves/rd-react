@@ -1,66 +1,38 @@
 import React from 'react'
-import styled from 'styled-components'
 
-import LogoDrogaraia from '../../assets/logo_drogaraia.png'
-import LogoDrogasil from '../../assets/logo_drogasil.png'
-import LogoFarmasil from '../../assets/logo_farmasil.png'
-import LogoUnivers from '../../assets/logo_univers.png'
-import LogoFourBio from '../../assets/logo_4bio.png'
-import LogoRd from '../../assets/logo_small.png'
+import LogoDrogaraia from 'assets/logo_drogaraia.png'
+import LogoDrogasil from 'assets/logo_drogasil.png'
+import LogoFarmasil from 'assets/logo_farmasil.png'
+import LogoUnivers from 'assets/logo_univers.png'
+import LogoFourBio from 'assets/logo_4bio.png'
+import LogoRd from 'assets/logo_small.png'
 
-const Container = styled.footer`
-  display: grid;
-  grid-template-columns: 300px 800px 100px;
-  clear: both;
-  height: 50px;
-  margin: 20px auto;
-  padding: 10px 0;
-  width: 100%;
-
-  p {
-    color: #868686;
-    margin: 30px 0;
-  }
-
-  .small-logo img {
-    margin-top: 30px;
-  }
-`
-const ListStyle = styled.ul`
-  margin: 20px;
-  li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 10px;
-  }
-`
+import { Container, ListStyle, LiStyle, ParagraphStyle, LogoStyle } from './styled'
 
 const Footer = () => (
   <Container>
+    <ParagraphStyle>
+      RD 2017. Todos os direitos reservados
+    </ParagraphStyle>
+    <ListStyle>
+      <LiStyle>
+        <img src={LogoDrogaraia} alt='Drogaraia' />
+      </LiStyle>
+      <LiStyle>
+        <img src={LogoDrogasil} alt='Drogasil' />
+      </LiStyle>
+      <LiStyle>
+        <img src={LogoFarmasil} alt='Farmasil' />
+      </LiStyle>
+      <LiStyle>
+        <img src={LogoUnivers} alt='Univers' />
+      </LiStyle>
+      <LiStyle>
+        <img src={LogoFourBio} alt='Four Bio' />
+      </LiStyle>
+    </ListStyle>
     <div>
-      <p>RD 2017. Todos os direitos reservados</p>
-    </div>
-    <div>
-      <ListStyle>
-        <li>
-          <img src={LogoDrogaraia} alt='Drogaraia' />
-        </li>
-        <li>
-          <img src={LogoDrogasil} alt='Drogasil' />
-        </li>
-        <li>
-          <img src={LogoFarmasil} alt='Farmasil' />
-        </li>
-        <li>
-          <img src={LogoUnivers} alt='Univers' />
-        </li>
-        <li>
-          <img src={LogoFourBio} alt='Four Bio' />
-        </li>
-      </ListStyle>
-    </div>
-    <div className='small-logo'>
-      <img src={LogoRd} alt='Raia Drogasil' />
+      <LogoStyle src={LogoRd} alt='Raia Drogasil' />
     </div>
   </Container>
 )
