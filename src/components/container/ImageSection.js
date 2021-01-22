@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { ImageSection } from './styled'
+import { ImageSection } from './Styled'
 
 const ImageSectionComponent = ({ children }) => (
   <ImageSection>

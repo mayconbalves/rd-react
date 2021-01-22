@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CircleDiv } from './styled'
+import { CircleDiv } from './Styled'
 
 const Circle = ({ backgroundArray }) => (
   backgroundArray.map((bg, index) => {

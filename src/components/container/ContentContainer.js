@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ImageSection from './ImageSection'
 import Circle from './Circle'
 import StyledButton from '../utils/StyleButton'
-import { ParagraphSection, BoxImg } from './styled'
+import { ParagraphSection, BoxImg } from './Styled'
 
 import DesktopImg from 'assets/desktop-responsive-design.png'
 import TabletImg from 'assets/tablets-responsive-design.png'
