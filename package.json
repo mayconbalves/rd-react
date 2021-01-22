@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src --max-warnings=0",
+    "lint": "eslint src --max-warnings=0 --fix",
     "test:watch": "yarn test --watch"
   },
   "husky": {
@@ -37,7 +37,7 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "yarn lint --fix"
+      "yarn lint"
     ]
   },
   "eslintConfig": {

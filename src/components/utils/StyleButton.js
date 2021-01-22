@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 const StyledButtonBody = styled.button`
-  background: ${props => props.background};
+  background: ${(props) => props.background};
   border: none;
   height: 40px;
   font-size: 1.1111111111em;

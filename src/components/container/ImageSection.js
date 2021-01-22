@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 import { ImageSection } from './Styled'
 
 const ImageSectionComponent = ({ children }) => (
-  <ImageSection>
-    {children}
-  </ImageSection>
+  <ImageSection>{children}</ImageSection>
 )
 
 ImageSectionComponent.propTypes = {

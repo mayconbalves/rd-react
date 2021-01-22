@@ -33,35 +33,35 @@ export const ImageSection = styled.section`
 `
 
 export const BoxImg = styled.div`
-  background: ${props => props.background};
+  background: ${(props) => props.background};
   max-height: 330px;
 
   .desktop {
-    background: #FE9481;
+    background: #fe9481;
 
     button {
-      background: ${props => props.backgroud};
+      background: ${(props) => props.backgroud};
     }
   }
   .tablet {
-    background: #FCDA92;
+    background: #fcda92;
   }
   .mobile {
-    background: #9C8CB9;
+    background: #9c8cb9;
   }
 
   img {
-    background: ${props => props.background};
+    background: ${(props) => props.background};
     margin: 3% 20%;
   }
 
   div {
-    background:  #fff;
+    background: #fff;
     min-height: 112px;
   }
 
   h3 {
-    background: ${props => props.background};
+    background: ${(props) => props.background};
     color: #fff;
     font-size: 1.77777777778em;
     font-weight: 300;
@@ -89,7 +89,7 @@ export const BoxImg = styled.div`
 export const CircleDiv = styled.div`
   height: 20px;
   width: 20px;
-  background: ${props => props.background || "#000"};
+  background: ${(props) => props.background || '#000'};
   border-radius: 50%;
   display: inline-block;
   margin: 0 5px;

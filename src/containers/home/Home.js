@@ -6,9 +6,8 @@ import Footer from 'components/footer/Footer'
 import { Container } from './Styled'
 
 const Home = () => {
-
   const handleChangeTheme = () => {
-    this.setState(preventState => ({ blackTheme: !preventState.blackTheme }))
+    this.setState((preventState) => ({ blackTheme: !preventState.blackTheme }))
   }
 
   return (
