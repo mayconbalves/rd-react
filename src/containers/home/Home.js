@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Menu from 'components/menu/Menu'
-import ContentContainer from 'components/container/ContentContainer'
+import ContentContainer from 'components/container'
 import Footer from 'components/footer/Footer'
 import { Container } from './Styled'
 
