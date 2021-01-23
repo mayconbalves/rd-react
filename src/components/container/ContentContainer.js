@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ImageSection from './ImageSection'
 import Circle from './Circle'
-import StyledButton from '../utils/StyleButton'
+import Button from 'components/button'
 import { ParagraphSection, BoxImg } from './Styled'
 
 import DesktopImg from 'assets/desktop-responsive-design.png'
@@ -49,7 +49,7 @@ class ContentContainer extends Component {
                 Quando pressionado o botão <span>Leia mais...</span> o restante
                 da informação deverá aparecer em scroll down.
               </p>
-              <StyledButton background="#FE9481" title="Leia mais..." />
+              <Button background="#FE9481" title="Leia mais..." />
             </div>
           </BoxImg>
 
@@ -63,7 +63,7 @@ class ContentContainer extends Component {
                 Quando pressionado o botão <span>Leia mais...</span> informação
                 deverá aparecer completa em um popup na tela.
               </p>
-              <StyledButton background="#FCDA92" title="Leia mais..." />
+              <Button background="#FCDA92" title="Leia mais..." />
             </div>
           </BoxImg>
 
@@ -77,7 +77,7 @@ class ContentContainer extends Component {
                 Quando pressionado o botão <span>alterar tema</span> modifique o
                 tema do site para blackfriday a seu gosto.
               </p>
-              <StyledButton
+              <Button
                 background="#9C8CB9"
                 handleAction={() => this.props.handleChangeTheme()}
                 title="Alterar tema"
