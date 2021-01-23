@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ImageSection from './ImageSection'
 import Circle from 'components/coloredCircle'
 import Button from 'components/button'
-import { ParagraphSection, BoxImg } from './Styled'
+import { ParagraphSection, BoxImg, ImageSection } from './Styled'
 
 import DesktopImg from 'assets/desktop-responsive-design.png'
 import TabletImg from 'assets/tablets-responsive-design.png'
