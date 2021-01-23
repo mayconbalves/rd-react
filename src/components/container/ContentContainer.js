@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import ImageSection from './ImageSection'
-import Circle from './Circle'
+import Circle from 'components/coloredCircle'
 import Button from 'components/button'
 import { ParagraphSection, BoxImg } from './Styled'
 
 import DesktopImg from 'assets/desktop-responsive-design.png'
 import TabletImg from 'assets/tablets-responsive-design.png'
 import MobileImg from 'assets/mobile-responsive-design.png'
-
-const backgroundArray = ['#007f56', '#FE9481', '#9C8CB9', '#868686', '#FCDA92']
 
 class ContentContainer extends Component {
   constructor(props) {
@@ -34,7 +32,7 @@ class ContentContainer extends Component {
             <br />
             Já as cores são:
             <br />
-            <Circle backgroundArray={backgroundArray} />
+            <Circle />
           </h3>
         </ParagraphSection>
 
