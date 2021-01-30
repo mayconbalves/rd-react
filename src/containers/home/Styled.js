@@ -38,23 +38,9 @@ export const ImageSection = styled.section`
   grid-column-gap: 3%;
 `
 
-export const BoxImg = styled.div`
+export const Box = styled.div`
   background: ${(props) => props.background};
   max-height: 330px;
-
-  .desktop {
-    background: #fe9481;
-
-    button {
-      background: ${(props) => props.backgroud};
-    }
-  }
-  .tablet {
-    background: #fcda92;
-  }
-  .mobile {
-    background: #9c8cb9;
-  }
 
   img {
     background: ${(props) => props.background};
@@ -90,4 +76,25 @@ export const BoxImg = styled.div`
     background: #fff;
     font-weight: 800;
   }
+`
+
+export const BoxImg = styled.div`
+  background: ${(props) => props.background};
+`
+
+export const StyledButton = styled.button`
+  background: ${(props) => props.background};
+  border: none;
+  height: 40px;
+  font-size: 1.1111111111em;
+  font-weight: 400;
+  float: right;
+  margin: 10px;
+  text-align: center;
+  text-shadow: none;
+  width: 33.33333333333333%;
+  color: #fff;
+  padding: 0 10px;
+  position: relative;
+  bottom: 50px;
 `

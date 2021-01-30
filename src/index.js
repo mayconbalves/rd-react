@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Open Sans", Helvetica, sans-serif, arial;
     margin: 0;
     padding: 0;
-    background: ${(props) =>
+    background-image: ${(props) =>
       props.blackTheme ? '#000' : `url(${BackgroundImage})`};
   }
 `

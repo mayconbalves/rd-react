@@ -3,7 +3,6 @@ import React from 'react'
 import Menu from 'components/menu'
 import Footer from 'components/footer/Footer'
 import Circle from 'components/coloredCircle'
-import Button from 'components/button'
 import DesktopImg from 'assets/desktop-responsive-design.png'
 import TabletImg from 'assets/tablets-responsive-design.png'
 import MobileImg from 'assets/mobile-responsive-design.png'
@@ -11,18 +10,16 @@ import MobileImg from 'assets/mobile-responsive-design.png'
 import {
   Container,
   StyledDiv,
-  BoxImg,
+  Box,
   ImageSection,
   StyledTitle,
   StyledSpan,
-  StyledSubTitle
+  StyledSubTitle,
+  BoxImg,
+  StyledButton
 } from './styled'
 
 const Home = () => {
-  const handleChangeTheme = () => {
-    this.setState((preventState) => ({ blackTheme: !preventState.blackTheme }))
-  }
-
   return (
     <Container>
       <Menu />
@@ -46,51 +43,47 @@ const Home = () => {
         </StyledDiv>
 
         <ImageSection>
-          <BoxImg background="#FE9481">
-            <div className="desktop">
+          <Box background="#FE9481">
+            <BoxImg background="#fe9481">
               <img src={DesktopImg} alt={DesktopImg} background="#FE9481" />
               <h3>Site Responsivo desktop</h3>
-            </div>
+            </BoxImg>
             <div>
               <p>
                 Quando pressionado o botão <span>Leia mais...</span> o restante
                 da informação deverá aparecer em scroll down.
               </p>
-              <Button background="#FE9481" title="Leia mais..." />
+              <StyledButton background="#FE9481">Ler mais...</StyledButton>
             </div>
-          </BoxImg>
+          </Box>
 
-          <BoxImg background="#FCDA92">
-            <div className="tablet">
+          <Box background="#FCDA92">
+            <BoxImg background="#fcda92">
               <img src={TabletImg} alt={TabletImg} background="#FCDA92" />
               <h3>Site Responsivo tablet</h3>
-            </div>
+            </BoxImg>
             <div>
               <p>
                 Quando pressionado o botão <span>Leia mais...</span> informação
                 deverá aparecer completa em um popup na tela.
               </p>
-              <Button background="#FCDA92" title="Leia mais..." />
+              <StyledButton background="#FCDA92">Ler mais...</StyledButton>
             </div>
-          </BoxImg>
+          </Box>
 
-          <BoxImg background="#9C8CB9">
-            <div className="mobile">
+          <Box background="#9C8CB9">
+            <BoxImg background="#9c8cb9">
               <img src={MobileImg} alt={MobileImg} background="#9C8CB9" />
               <h3>Site Responsivo mobile</h3>
-            </div>
+            </BoxImg>
             <div>
               <p>
                 Quando pressionado o botão <span>alterar tema</span> modifique o
                 tema do site para blackfriday a seu gosto.
               </p>
-              <Button
-                background="#9C8CB9"
-                handleAction={() => handleChangeTheme()}
-                title="Alterar tema"
-              />
+              <StyledButton background="#9C8CB9">Alterar tema</StyledButton>
             </div>
-          </BoxImg>
+          </Box>
         </ImageSection>
       </main>
       <Footer />
