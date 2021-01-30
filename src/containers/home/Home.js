@@ -4,11 +4,19 @@ import Menu from 'components/menu'
 import Footer from 'components/footer/Footer'
 import Circle from 'components/coloredCircle'
 import Button from 'components/button'
-import { Container, ParagraphSection, BoxImg, ImageSection } from './styled'
-
 import DesktopImg from 'assets/desktop-responsive-design.png'
 import TabletImg from 'assets/tablets-responsive-design.png'
 import MobileImg from 'assets/mobile-responsive-design.png'
+
+import {
+  Container,
+  StyledDiv,
+  BoxImg,
+  ImageSection,
+  StyledTitle,
+  StyledSpan,
+  StyledSubTitle
+} from './styled'
 
 const Home = () => {
   const handleChangeTheme = () => {
@@ -18,14 +26,15 @@ const Home = () => {
   return (
     <Container>
       <Menu />
-      <div>
-        <ParagraphSection>
-          <h2>
-            Crie este site <span>responsivo</span> com <span>react</span>{' '}
-            utilizando <span>styled-components</span>
-          </h2>
+      <main>
+        <StyledDiv>
+          <StyledTitle>
+            Crie este site <StyledSpan>responsivo </StyledSpan>com
+            <StyledSpan> react</StyledSpan> utilizando{' '}
+            <StyledSpan>styled-components</StyledSpan>
+          </StyledTitle>
 
-          <h3>
+          <StyledSubTitle>
             A fonte utilizada é a Open Sans de 300 a 800.
             <br />
             exemplo: Open Sans, Helvetica, sans-serif, arial;
@@ -33,8 +42,8 @@ const Home = () => {
             Já as cores são:
             <br />
             <Circle />
-          </h3>
-        </ParagraphSection>
+          </StyledSubTitle>
+        </StyledDiv>
 
         <ImageSection>
           <BoxImg background="#FE9481">
@@ -83,7 +92,7 @@ const Home = () => {
             </div>
           </BoxImg>
         </ImageSection>
-      </div>
+      </main>
       <Footer />
     </Container>
   )

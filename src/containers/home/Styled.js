@@ -1,34 +1,35 @@
 import styled from 'styled-components'
 
-export const Container = styled.main`
-  margin: auto;
-  width: 1200px;
+export const Container = styled.div`
+  margin: 0 auto;
+  width: 90%;
 `
 
-export const ParagraphSection = styled.section`
+export const StyledDiv = styled.div`
   margin: 5% 10%;
-  h2 {
-    color: #007f56;
-    font-weight: 300;
-    font-size: 3.3333333333em;
-    text-align: center;
+`
 
-    span {
-      font-weight: bold;
+export const StyledSpan = styled.span`
+  font-weight: bold;
 
-      &:nth-child(even) {
-        text-transform: uppercase;
-      }
-    }
+  &:nth-child(even) {
+    text-transform: uppercase;
   }
+`
 
-  h3 {
-    color: #868686;
-    font-size: 1.7777777778em;
-    text-align: center;
-    font-weight: 300;
-    margin: 5%;
-  }
+export const StyledTitle = styled.h1`
+  color: #007f56;
+  font-weight: 300;
+  font-size: 3.3333333333em;
+  text-align: center;
+`
+
+export const StyledSubTitle = styled.h3`
+  color: #868686;
+  font-size: 1.7777777778em;
+  text-align: center;
+  font-weight: 300;
+  margin: 5%;
 `
 
 export const ImageSection = styled.section`
